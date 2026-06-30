@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #f5f7fb;
+}
+
+main {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    color: #111827;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+section {
+    margin-bottom: 32px;
+    padding: 24px;
+    border: 1px solid #d7dee8;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+form {
+    display: grid;
+    gap: 16px;
+    max-width: 420px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    background: #ffffff;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button,
+a.button {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    background: #2563eb;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+a.button:hover {
+    background: #1d4ed8;
+}
+
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    color: #1d4ed8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid #d7dee8;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    font-weight: 700;
+    color: #374151;
+    background: #eef2f7;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 18px;
+    margin: 0;
+}
+
+dt {
+    font-weight: 700;
+    color: #374151;
+}
+
+dd {
+    margin: 0;
+}
+
+[role="alert"] {
+    max-width: 520px;
+    padding: 12px 14px;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    color: #991b1b;
+    background: #fef2f2;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: min(100% - 20px, 1100px);
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    dl {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}
